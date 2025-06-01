@@ -10,9 +10,14 @@ const options = {
     },
     servers: [
       {
+        url: "https://encryption-decryption-l3jn.onrender.com",
+        description: "Deployed server",
+      },
+      {
         url: "http://127.0.0.1:3500",
         description: "Development server",
       },
+      
     ],
   },
   apis: ["./src/routes/*.js"], // path to route files with swagger comments
