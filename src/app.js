@@ -12,6 +12,11 @@ const encryptRoutes = require("./routes/encrypt.routes");
 const decryptRoutes = require("./routes/decrypt.routes");
 const contactRoutes = require("./routes/contact.routes");
 
+const publicPath = path.join(__dirname, "public");
+if (!fs.existsSync(publicPath)) {
+  fs.mkdirSync(publicPath);
+}
+
 dotenv.config();
 
 const app = express();
