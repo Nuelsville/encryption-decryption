@@ -24,7 +24,7 @@ const app = express();
 // const __dirname = path.resolve();
 
 // Middlewares
-// app.use(cors());
+app.use(cors());
 app.use(helmet());
 app.use(morgan("dev"));
 app.use(express.json());
